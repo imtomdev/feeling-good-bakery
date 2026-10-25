@@ -39,5 +39,7 @@ window.axeptioSettings = {
 
 const sdk = document.createElement("script");
 sdk.async = true;
-sdk.src = "//static.axept.io/sdk.js";
+// The site is served over HTTPS only (HTTP redirects): an explicit scheme avoids
+// a redirect when the build is previewed over plain HTTP.
+sdk.src = "https://static.axept.io/sdk.js";
 document.head.appendChild(sdk);
