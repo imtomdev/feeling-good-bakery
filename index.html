@@ -270,265 +270,268 @@
       </div>
     </section>
     <section class="modals">
-      <div class="modal" data-id="james-brownie">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <div class="cookie">
-            <img
-              src="./assets/img/recipes/james-brownie.webp"
-              alt="cookie-james-brownie"
-            />
+      <!-- Modals are inert until first opened (see src/js/components/modal.js) -->
+      <template class="modals">
+        <div class="modal" data-id="james-brownie">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <div class="cookie">
+              <img
+                src="./assets/img/recipes/james-brownie.webp"
+                alt="cookie-james-brownie"
+              />
+            </div>
+            <h2>L’histoire du James Brownie</h2>
+            <p>
+              Le brownie, un autre classique américain : très chocolaté, fondant
+              et moelleux en bouche, on y ajoute souvent des noix pour jouer sur
+              les contrastes et accentuer la gourmandise. Nous l’avons revisité à
+              la sauce cookie, en gardant ce moelleux, en choisissant des
+              noisettes du Piémont bien parfumées, et en ajoutant l’ingrédient
+              magique qui fait tout : la ﬂeur de sel de Guérande. Il est destiné
+              aux amoureux du chocolat, ceux qui choisiront toujours un fondant au
+              chocolat en dessert. <br />
+              Un peu comme le Papa de Quittrie qui l’adore et le sert à l’assiette
+              avec une crème anglaise à la vanille !
+            </p>
           </div>
-          <h2>L’histoire du James Brownie</h2>
-          <p>
-            Le brownie, un autre classique américain : très chocolaté, fondant
-            et moelleux en bouche, on y ajoute souvent des noix pour jouer sur
-            les contrastes et accentuer la gourmandise. Nous l’avons revisité à
-            la sauce cookie, en gardant ce moelleux, en choisissant des
-            noisettes du Piémont bien parfumées, et en ajoutant l’ingrédient
-            magique qui fait tout : la ﬂeur de sel de Guérande. Il est destiné
-            aux amoureux du chocolat, ceux qui choisiront toujours un fondant au
-            chocolat en dessert. <br />
-            Un peu comme le Papa de Quittrie qui l’adore et le sert à l’assiette
-            avec une crème anglaise à la vanille !
-          </p>
         </div>
-      </div>
-      <div class="modal" data-id="pecan-express">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <div class="cookie">
-            <img
-              src="./assets/img/recipes/pecan-express.webp"
-              alt="cookie-pecan-express"
-            />
+        <div class="modal" data-id="pecan-express">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <div class="cookie">
+              <img
+                src="./assets/img/recipes/pecan-express.webp"
+                alt="cookie-pecan-express"
+              />
+            </div>
+            <h2>L’histoire du Pecan Express</h2>
+            <p>
+              Oui, certains noms de nos cookies ont été trouvés tard le soir,
+              parfois après de multiples débats mais aussi (souvent) suite à une
+              blague, un simple jeu de mot qui nous a fait rire… <br />
+              L’ouverture d’un lieu, quel qu’il soit, donne beaucoup de sueurs
+              froides mais aussi énormément de jolis souvenirs. Si la fatigue met
+              les nerfs à rude épreuve, elle est le point de départ de nombreux
+              fous rires. Il nous arrivait régulièrement de nous questionner,
+              « Est-ce que ça va plaire ? », « Est-ce que nos blagues de 2h du
+              matin gagnent réellement à être connues ? ». La réponse est bien
+              évidemment non (ne nous leurrons pas), mais elles nous représentent
+              bien alors nous avons décidé de les garder.
+            </p>
           </div>
-          <h2>L’histoire du Pecan Express</h2>
-          <p>
-            Oui, certains noms de nos cookies ont été trouvés tard le soir,
-            parfois après de multiples débats mais aussi (souvent) suite à une
-            blague, un simple jeu de mot qui nous a fait rire… <br />
-            L’ouverture d’un lieu, quel qu’il soit, donne beaucoup de sueurs
-            froides mais aussi énormément de jolis souvenirs. Si la fatigue met
-            les nerfs à rude épreuve, elle est le point de départ de nombreux
-            fous rires. Il nous arrivait régulièrement de nous questionner,
-            « Est-ce que ça va plaire ? », « Est-ce que nos blagues de 2h du
-            matin gagnent réellement à être connues ? ». La réponse est bien
-            évidemment non (ne nous leurrons pas), mais elles nous représentent
-            bien alors nous avons décidé de les garder.
-          </p>
         </div>
-      </div>
-      <div class="modal" data-id="s-more">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <div class="cookie">
-            <img src="./assets/img/recipes/s-more.webp" alt="cookie-s-more" />
+        <div class="modal" data-id="s-more">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <div class="cookie">
+              <img src="./assets/img/recipes/s-more.webp" alt="cookie-s-more" />
+            </div>
+            <h2>L’histoire du S’more</h2>
+            <p>
+              Traditionnellement consommé autour d’un feu de camp lors des
+              veillées estivales des Scouts aux Etats-Unis (on retrouve d’ailleurs
+              sa trace dans un manuel des « Girl Scout » de 1927), le S’more
+              consiste en un casse-croute de fortune : faites griller un
+              chamallow, placez-le entre deux Graham crackers, ajoutez-y un carré
+              de chocolat, dégustez ! Selon la légende, son nom viendrait du fait
+              qu’on ne peut pas s’arrêter d’en manger : « Give me more », « Some
+              more », aurait donné son nom au « S’more ».
+              <br />
+              Les américains ont tenté de mélanger ce snack avec une autre de leur
+              recette non moins typique : le cookie. Ça a donné le « S’more
+              cookie », un cookie fourré à la guimauve, très apprécié là-bas mais
+              encore peu répandu en France. Il fallait que nous comblions ce
+              manque avec une guimauve artisanale au miel, moins sucrée et donc
+              plus adaptée au palais des français. D’un simple test au début, nous
+              avons été conquis par le côté « ourson à la guimauve » de notre
+              enfance, le jeu de texture lui donne tout son charme et fait du
+              S’more un incontournable !
+            </p>
           </div>
-          <h2>L’histoire du S’more</h2>
-          <p>
-            Traditionnellement consommé autour d’un feu de camp lors des
-            veillées estivales des Scouts aux Etats-Unis (on retrouve d’ailleurs
-            sa trace dans un manuel des « Girl Scout » de 1927), le S’more
-            consiste en un casse-croute de fortune : faites griller un
-            chamallow, placez-le entre deux Graham crackers, ajoutez-y un carré
-            de chocolat, dégustez ! Selon la légende, son nom viendrait du fait
-            qu’on ne peut pas s’arrêter d’en manger : « Give me more », « Some
-            more », aurait donné son nom au « S’more ».
-            <br />
-            Les américains ont tenté de mélanger ce snack avec une autre de leur
-            recette non moins typique : le cookie. Ça a donné le « S’more
-            cookie », un cookie fourré à la guimauve, très apprécié là-bas mais
-            encore peu répandu en France. Il fallait que nous comblions ce
-            manque avec une guimauve artisanale au miel, moins sucrée et donc
-            plus adaptée au palais des français. D’un simple test au début, nous
-            avons été conquis par le côté « ourson à la guimauve » de notre
-            enfance, le jeu de texture lui donne tout son charme et fait du
-            S’more un incontournable !
-          </p>
         </div>
-      </div>
-      <div class="modal" data-id="dandy">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <div class="cookie">
-            <img src="./assets/img/recipes/dandy.webp" alt="cookie-dandy" />
+        <div class="modal" data-id="dandy">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <div class="cookie">
+              <img src="./assets/img/recipes/dandy.webp" alt="cookie-dandy" />
+            </div>
+            <h2>L’histoire du Dandy</h2>
+            <p>
+              LE cookie par déﬁnition : une pâte à la vanille, du chocolat noir
+              bien corsé à 70%, de la ﬂeur de sel de Guérande. Le Dandy c’est un
+              peu notre cookie esthète, pour les fans du vrai goût de chocolat,
+              intense en bouche, réhaussé par la ﬂeur de sel. Il est souvent
+              dégusté par ceux qui ne sont « pas très sucrés » et qui aiment sa
+              puissance. Choisir le Dandy, au fond, c’est montrer que l’on est un
+              vrai connaisseur du cookie avec un grand C, qui ne s’encombre pas de
+              ﬁoritures.
+            </p>
           </div>
-          <h2>L’histoire du Dandy</h2>
-          <p>
-            LE cookie par déﬁnition : une pâte à la vanille, du chocolat noir
-            bien corsé à 70%, de la ﬂeur de sel de Guérande. Le Dandy c’est un
-            peu notre cookie esthète, pour les fans du vrai goût de chocolat,
-            intense en bouche, réhaussé par la ﬂeur de sel. Il est souvent
-            dégusté par ceux qui ne sont « pas très sucrés » et qui aiment sa
-            puissance. Choisir le Dandy, au fond, c’est montrer que l’on est un
-            vrai connaisseur du cookie avec un grand C, qui ne s’encombre pas de
-            ﬁoritures.
-          </p>
         </div>
-      </div>
-      <div class="modal" data-id="roudoudou">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <div class="cookie">
-            <img
-              src="./assets/img/recipes/roudoudou.webp"
-              alt="cookie-roudoudou"
-            />
+        <div class="modal" data-id="roudoudou">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <div class="cookie">
+              <img
+                src="./assets/img/recipes/roudoudou.webp"
+                alt="cookie-roudoudou"
+              />
+            </div>
+            <h2>L’histoire du Roudoudou</h2>
+            <p>
+              Lorsqu’on nous demande un conseil dans le choix d’un cookie, on
+              propose toujours notre Roudoudou. Certains sont parfois interloqués,
+              « c’est le plus simple ! ». Et oui, il peut paraître simple mais le
+              chocolat au lait et la ﬂeur de sel de Guérande font des miracles
+              dans le palais ! Le Roudoudou, vous croquez dedans, et c’est juste
+              une longue caresse en bouche. Un incontournable, notre best-seller
+              depuis le début ! Les addicts du Roudoudou n’ont souvent que lui à
+              la bouche et reviennent chaque semaine renﬂouer leur stock, du jeune
+              homme étudiant à la mamie pour accompagner son thé, le Roudoudou est
+              transgénérationnel !
+            </p>
           </div>
-          <h2>L’histoire du Roudoudou</h2>
-          <p>
-            Lorsqu’on nous demande un conseil dans le choix d’un cookie, on
-            propose toujours notre Roudoudou. Certains sont parfois interloqués,
-            « c’est le plus simple ! ». Et oui, il peut paraître simple mais le
-            chocolat au lait et la ﬂeur de sel de Guérande font des miracles
-            dans le palais ! Le Roudoudou, vous croquez dedans, et c’est juste
-            une longue caresse en bouche. Un incontournable, notre best-seller
-            depuis le début ! Les addicts du Roudoudou n’ont souvent que lui à
-            la bouche et reviennent chaque semaine renﬂouer leur stock, du jeune
-            homme étudiant à la mamie pour accompagner son thé, le Roudoudou est
-            transgénérationnel !
-          </p>
         </div>
-      </div>
-      <div class="modal" data-id="naoned">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <div class="cookie">
-            <img src="./assets/img/recipes/naoned.webp" alt="cookie-naoned" />
+        <div class="modal" data-id="naoned">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <div class="cookie">
+              <img src="./assets/img/recipes/naoned.webp" alt="cookie-naoned" />
+            </div>
+            <h2>L’histoire du Naoned</h2>
+            <p>
+              L’histoire de Nantes est intimement liée à l’histoire de la Bretagne
+              et du biscuit. Naoned, signiﬁe tout simplement Nantes en breton ! Ce
+              cookie reprend les ingrédients phares de la culture culinaire
+              bretonne : du sarrasin torréﬁé pour le craquant, et du caramel au
+              beurre salé pour la gourmandise. Un cookie, traditionnellement
+              américain, mais à la sauce Bigouden !
+            </p>
           </div>
-          <h2>L’histoire du Naoned</h2>
-          <p>
-            L’histoire de Nantes est intimement liée à l’histoire de la Bretagne
-            et du biscuit. Naoned, signiﬁe tout simplement Nantes en breton ! Ce
-            cookie reprend les ingrédients phares de la culture culinaire
-            bretonne : du sarrasin torréﬁé pour le craquant, et du caramel au
-            beurre salé pour la gourmandise. Un cookie, traditionnellement
-            américain, mais à la sauce Bigouden !
-          </p>
         </div>
-      </div>
-      <div class="modal" data-id="peanut-better">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <div class="cookie">
-            <img
-              src="./assets/img/recipes/peanut-better.webp"
-              alt="cookie-peanut-better"
-            />
+        <div class="modal" data-id="peanut-better">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <div class="cookie">
+              <img
+                src="./assets/img/recipes/peanut-better.webp"
+                alt="cookie-peanut-better"
+              />
+            </div>
+            <h2>L’histoire du Peanut Better</h2>
+            <p>
+              Le cookie au beurre de cacahuète est extrêmement courant aux
+              Etats-Unis. Pour nous, le beurre de cacahuète est un péché mignon
+              très régressif, Il se déguste sur du pain grillé avec de la
+              confiture de fruits rouges ou directement à la petite cuillère ! Le
+              gros souci que nous avons rencontré lors de la création de ce cookie
+              à trait aux ingrédients qui composent la plupart des beurres de
+              cacahuète. Il est très difficile d’en trouver un sans huile de
+              palme, agents de texture ou additifs , biologique ET qui ne soit pas
+              trop pâteux en bouche ! Souvent, les beurres de cacahuète
+              “éthiques”, sont bien moins crémeux que leur alter ego américain, et
+              c’est bien normal. Aussi, nous réalisons nous-mêmes notre crème
+              de cacahuète en partant d’une pâte de cacahuète biologique. Le
+              résultat, sucré-salé, se marie parfaitement à notre chocolat au
+              lait, et il est franchement addictif !
+            </p>
           </div>
-          <h2>L’histoire du Peanut Better</h2>
-          <p>
-            Le cookie au beurre de cacahuète est extrêmement courant aux
-            Etats-Unis. Pour nous, le beurre de cacahuète est un péché mignon
-            très régressif, Il se déguste sur du pain grillé avec de la
-            confiture de fruits rouges ou directement à la petite cuillère ! Le
-            gros souci que nous avons rencontré lors de la création de ce cookie
-            à trait aux ingrédients qui composent la plupart des beurres de
-            cacahuète. Il est très difficile d’en trouver un sans huile de
-            palme, agents de texture ou additifs , biologique ET qui ne soit pas
-            trop pâteux en bouche ! Souvent, les beurres de cacahuète
-            “éthiques”, sont bien moins crémeux que leur alter ego américain, et
-            c’est bien normal. Aussi, nous réalisons nous-mêmes notre crème
-            de cacahuète en partant d’une pâte de cacahuète biologique. Le
-            résultat, sucré-salé, se marie parfaitement à notre chocolat au
-            lait, et il est franchement addictif !
-          </p>
         </div>
-      </div>
-      <div class="modal" data-id="matchaman">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <div class="cookie">
-            <img
-              src="./assets/img/recipes/matchaman.webp"
-              alt="cookie-matchaman"
-            />
+        <div class="modal" data-id="matchaman">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <div class="cookie">
+              <img
+                src="./assets/img/recipes/matchaman.webp"
+                alt="cookie-matchaman"
+              />
+            </div>
+            <h2>L’histoire du Matcha Matcha Man</h2>
+            <p>
+              « Et un cookie à la pistache s’il vous plait ! ». Cette phrase, on
+              l’entend souvent, et pourtant la couleur verte n’a rien à voir avec
+              de la pistache (qui est marron au naturel, sinon c’est bien souvent
+              du colorant !). La poudre de thé vert donne un goût végétal, un côté
+              « herbe coupée » qui perturbe à la première bouchée. La première
+              fois que Quittrie en a gouté, elle n’arrivait d’ailleurs pas à
+              savoir si elle aimait la saveur ou non. Mais suite à cette
+              dégustation, impossible de lui sortir ce goût de la tête. Elle avait
+              une obsession : en goûter à nouveau ! Si le thé matcha est souvent
+              associé au chocolat blanc en pâtisserie, nous avons préféré lui
+              associer le chocolat au lait qui lui donne plus de caractère. À
+              l’ouverture de la boutique, les clients se montraient parfois
+              frileux. Certains nous posent encore la question « Est-ce que le
+              goût est vraiment fort ? ». Mais il a conquis une bonne partie de
+              notre clientèle dont certains ne viennent que pour lui. Son goût
+              inimitable complète parfaitement la gamme de nos cookies, on ne
+              saurait se passer de lui aujourd’hui.
+            </p>
           </div>
-          <h2>L’histoire du Matcha Matcha Man</h2>
-          <p>
-            « Et un cookie à la pistache s’il vous plait ! ». Cette phrase, on
-            l’entend souvent, et pourtant la couleur verte n’a rien à voir avec
-            de la pistache (qui est marron au naturel, sinon c’est bien souvent
-            du colorant !). La poudre de thé vert donne un goût végétal, un côté
-            « herbe coupée » qui perturbe à la première bouchée. La première
-            fois que Quittrie en a gouté, elle n’arrivait d’ailleurs pas à
-            savoir si elle aimait la saveur ou non. Mais suite à cette
-            dégustation, impossible de lui sortir ce goût de la tête. Elle avait
-            une obsession : en goûter à nouveau ! Si le thé matcha est souvent
-            associé au chocolat blanc en pâtisserie, nous avons préféré lui
-            associer le chocolat au lait qui lui donne plus de caractère. À
-            l’ouverture de la boutique, les clients se montraient parfois
-            frileux. Certains nous posent encore la question « Est-ce que le
-            goût est vraiment fort ? ». Mais il a conquis une bonne partie de
-            notre clientèle dont certains ne viennent que pour lui. Son goût
-            inimitable complète parfaitement la gamme de nos cookies, on ne
-            saurait se passer de lui aujourd’hui.
-          </p>
         </div>
-      </div>
-      <div class="modal" data-id="mamma-damia">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <div class="cookie">
-            <img
-              src="./assets/img/recipes/mamma-damia.webp"
-              alt="cookie-mamma-damia"
-            />
+        <div class="modal" data-id="mamma-damia">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <div class="cookie">
+              <img
+                src="./assets/img/recipes/mamma-damia.webp"
+                alt="cookie-mamma-damia"
+              />
+            </div>
+            <h2>L’histoire du Mamma-Damia</h2>
+            <p>
+              Notre Mamma Damia, c’est la douceur à l’état pur ! Pour être tout à
+              fait honnêtes, le chocolat blanc n’est pas notre chocolat favori.
+              Mais nous avions beaucoup de demandes de la part de nos clients !
+              Notre objectif est, bien sûr, de leur faire plaisir, alors nous
+              avons décidé d’ajouter un cookie chocolat blanc à la carte ! Il est
+              maintenant incontournable. Le chocolat blanc de chez Valrhona est
+              extrêmement crémeux et vanillé, les noix de macadamia apportent de
+              la mâche et adoucissent la saveur sucrée, l’ajout de chocolat au
+              lait lui donne un peu plus de caractère. Au final, nous avons fini
+              par l'adopter et c’est même devenu l’un de nos préférés. Comme quoi,
+              nos clients sont très convaincants et nous font même parfois changer
+              d’avis !
+            </p>
           </div>
-          <h2>L’histoire du Mamma-Damia</h2>
-          <p>
-            Notre Mamma Damia, c’est la douceur à l’état pur ! Pour être tout à
-            fait honnêtes, le chocolat blanc n’est pas notre chocolat favori.
-            Mais nous avions beaucoup de demandes de la part de nos clients !
-            Notre objectif est, bien sûr, de leur faire plaisir, alors nous
-            avons décidé d’ajouter un cookie chocolat blanc à la carte ! Il est
-            maintenant incontournable. Le chocolat blanc de chez Valrhona est
-            extrêmement crémeux et vanillé, les noix de macadamia apportent de
-            la mâche et adoucissent la saveur sucrée, l’ajout de chocolat au
-            lait lui donne un peu plus de caractère. Au final, nous avons fini
-            par l'adopter et c’est même devenu l’un de nos préférés. Comme quoi,
-            nos clients sont très convaincants et nous font même parfois changer
-            d’avis !
-          </p>
         </div>
-      </div>
+      </template>
     </section>
     <section class="season-products">
       <h2 class="mobile">
@@ -767,158 +770,161 @@
         </li>
         <li class="link-footer handle-modal" data-id="rgpd">RGPD</li>
       </ul>
-      <div class="modal" data-id="mentions-legales">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <h2>Mentions légales</h2>
-          <p>
-            Conformément aux dispositions des Articles 6-III et 19 de la Loi
-            n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie
-            numérique, dite L.C.E.N., il est porté à la connaissance des
-            Utilisateurs du site feelinggoodbakery.fr les présentes mentions
-            légales. La connexion et la navigation sur le site
-            feelinggoodbakery.fr par l’Utilisateur implique acceptation
-            intégrale et sans réserve des présentes mentions légales.
-          </p>
+      <!-- Modals are inert until first opened (see src/js/components/modal.js) -->
+      <template class="modals">
+        <div class="modal" data-id="mentions-legales">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <h2>Mentions légales</h2>
+            <p>
+              Conformément aux dispositions des Articles 6-III et 19 de la Loi
+              n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie
+              numérique, dite L.C.E.N., il est porté à la connaissance des
+              Utilisateurs du site feelinggoodbakery.fr les présentes mentions
+              légales. La connexion et la navigation sur le site
+              feelinggoodbakery.fr par l’Utilisateur implique acceptation
+              intégrale et sans réserve des présentes mentions légales.
+            </p>
 
-          <div>
-            <h3>ARTICLE 1 : L’éditeur</h3>
-            <p>
-              L’édition du site feelinggoodbakery.fr est assurée par la Société
-              SARL JM COIFF au capital de ? euros, immatriculée au RCS de ? sous
-              le numéro ? dont le siège social est situé au ?, adresse e-mail :
-              ?
-            </p>
-          </div>
+            <div>
+              <h3>ARTICLE 1 : L’éditeur</h3>
+              <p>
+                L’édition du site feelinggoodbakery.fr est assurée par la Société
+                SARL JM COIFF au capital de ? euros, immatriculée au RCS de ? sous
+                le numéro ? dont le siège social est situé au ?, adresse e-mail :
+                ?
+              </p>
+            </div>
 
-          <div>
-            <h3>ARTICLE 2 : L’hébergeur</h3>
-            <p>
-              L’hébergeur du site feelinggoodbakery.fr est la Société ? , dont
-              le siège social est situé au ?
-            </p>
-          </div>
+            <div>
+              <h3>ARTICLE 2 : L’hébergeur</h3>
+              <p>
+                L’hébergeur du site feelinggoodbakery.fr est la Société ? , dont
+                le siège social est situé au ?
+              </p>
+            </div>
 
-          <div>
-            <h3>ARTICLE 3 : Accès au site</h3>
-            <p>
-              Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de
-              force majeure, interruption programmée ou non et pouvant découlant
-              d’une nécessité de maintenance. En cas de modification,
-              interruption ou suspension des services le site
-              feelinggoodbakery.fr ne saurait être tenu responsable.
-            </p>
-          </div>
+            <div>
+              <h3>ARTICLE 3 : Accès au site</h3>
+              <p>
+                Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de
+                force majeure, interruption programmée ou non et pouvant découlant
+                d’une nécessité de maintenance. En cas de modification,
+                interruption ou suspension des services le site
+                feelinggoodbakery.fr ne saurait être tenu responsable.
+              </p>
+            </div>
 
-          <div>
-            <h3>ARTICLE 4 : Collecte des données</h3>
-            <p>
-              Le site est exempté de déclaration à la Commission Nationale
-              Informatique et Libertés (CNIL) dans la mesure où il ne collecte
-              aucune donnée concernant les utilisateurs.
-            </p>
-          </div>
+            <div>
+              <h3>ARTICLE 4 : Collecte des données</h3>
+              <p>
+                Le site est exempté de déclaration à la Commission Nationale
+                Informatique et Libertés (CNIL) dans la mesure où il ne collecte
+                aucune donnée concernant les utilisateurs.
+              </p>
+            </div>
 
-          <div>
-            <h3>ARTICLE 5 : Cookies</h3>
-            <p>
-              L’Utilisateur est informé que lors de ses visites sur le site, un
-              cookie peut s’installer automatiquement sur son logiciel de
-              navigation. En naviguant sur le site, il les accepte. Un cookie
-              est un élément qui ne permet pas d’identifier l’Utilisateur mais
-              sert à enregistrer des informations relatives à la navigation de
-              celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce
-              cookie par l’intermédiaire des paramètres figurant au sein de son
-              logiciel de navigation.
-            </p>
-          </div>
+            <div>
+              <h3>ARTICLE 5 : Cookies</h3>
+              <p>
+                L’Utilisateur est informé que lors de ses visites sur le site, un
+                cookie peut s’installer automatiquement sur son logiciel de
+                navigation. En naviguant sur le site, il les accepte. Un cookie
+                est un élément qui ne permet pas d’identifier l’Utilisateur mais
+                sert à enregistrer des informations relatives à la navigation de
+                celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce
+                cookie par l’intermédiaire des paramètres figurant au sein de son
+                logiciel de navigation.
+              </p>
+            </div>
 
-          <div>
-            <h3>ARTICLE 6 : Propriété intellectuelle</h3>
-            <p>
-              Toute utilisation, reproduction, diffusion, commercialisation,
-              modification de toute ou partie du site feelinggoodbakery.fr, sans
-              autorisation de l’Editeur est prohibée et pourra entraînée des
-              actions et poursuites judiciaires telles que notamment prévues par
-              le Code de la propriété intellectuelle et le Code civil.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="modal" data-id="rgpd">
-        <img
-          src="./assets/img/icons/cross-modal.png"
-          alt="close-modal"
-          class="close"
-        />
-        <div class="content">
-          <h2>RGPD</h2>
-          <p>
-            Le RGPD, règlement général sur la protection des données à caractère
-            personnel, est comme son nom l’indique un règlement européen entré
-            en vigueur le 25 mai 2018 et visant à resserrer le contrôle quant à
-            la protection et au respect des données personnelles et de la vie
-            privée.
-          </p>
-
-          <div>
-            <h3>Délégué à la protection des données</h3>
-            <p>
-              Le délégué à la protection des données est Madame et Monsieur ...
-              ? Conformément à la loi « informatique et libertés », vous pouvez
-              exercer votre droit d’accès aux données vous concernant et les
-              faire rectifier en contactant : Madame et Monsieur ... ?
-            </p>
-          </div>
-
-          <div>
-            <h3>Cookies</h3>
-            <p>
-              Ce site utilise des cookies – de petits fichiers texte qui sont
-              placés sur votre machine pour aider le site à fournir une
-              meilleure expérience utilisateur. Les cookies sont utilisés pour
-              conserver les préférences de l’utilisateur et fournir des données
-              de suivi anonymisées à des applications tierces comme Google
-              Analytics. En poursuivant votre navigation sur ce site, vous
-              acceptez donc l’utilisation de cookies.
-            </p>
-          </div>
-
-          <div>
-            <h3>Informations recueillies</h3>
-            <p>
-              Le site internet : Feeling Good Bakery ne demande pas
-              d’enregistrement nominatif à ses visiteurs et ne procède à aucun
-              enregistrement nominatif pour la simple consultation de ses pages.
-              Cependant, dans certains cas comme le formulaire de contact ou une
-              demande d’estimation en ligne, vous pouvez être invité à laisser
-              des données personnelles. Le caractère obligatoire ou facultatif
-              des données vous est signalé lors de la collecte par un
-              astérisque. Nous ne collectons aucune donnée sensible, à savoir
-              aucune donnée relative à vos origines raciales ou ethniques, à vos
-              opinions politiques, philosophiques ou religieuses ou votre
-              appartenance syndicale, ou qui sont relatives à votre santé ou
-              votre vie sexuelle.
-            </p>
-            <p>
-              Les informations recueillies sur le formulaire de contact de ce
-              site internet sont utilisées pour la gestion des demandes de devis
-              ou de demandes diverses, conservées sur le territoire européen et
-              sont en aucun cas revendues à des tiers. Elles sont conservées
-              pendant 10 ans et sont destinées à un usage interne uniquement.
-            </p>
-            <p>
-              Nous vous informons également de l’existence de la liste
-              d’opposition au démarchage téléphonique « Bloctel », sur laquelle
-              vous pouvez vous inscrire ici : https://conso.bloctel.fr/
-            </p>
+            <div>
+              <h3>ARTICLE 6 : Propriété intellectuelle</h3>
+              <p>
+                Toute utilisation, reproduction, diffusion, commercialisation,
+                modification de toute ou partie du site feelinggoodbakery.fr, sans
+                autorisation de l’Editeur est prohibée et pourra entraînée des
+                actions et poursuites judiciaires telles que notamment prévues par
+                le Code de la propriété intellectuelle et le Code civil.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="modal" data-id="rgpd">
+          <img
+            src="./assets/img/icons/cross-modal.png"
+            alt="close-modal"
+            class="close"
+          />
+          <div class="content">
+            <h2>RGPD</h2>
+            <p>
+              Le RGPD, règlement général sur la protection des données à caractère
+              personnel, est comme son nom l’indique un règlement européen entré
+              en vigueur le 25 mai 2018 et visant à resserrer le contrôle quant à
+              la protection et au respect des données personnelles et de la vie
+              privée.
+            </p>
+
+            <div>
+              <h3>Délégué à la protection des données</h3>
+              <p>
+                Le délégué à la protection des données est Madame et Monsieur ...
+                ? Conformément à la loi « informatique et libertés », vous pouvez
+                exercer votre droit d’accès aux données vous concernant et les
+                faire rectifier en contactant : Madame et Monsieur ... ?
+              </p>
+            </div>
+
+            <div>
+              <h3>Cookies</h3>
+              <p>
+                Ce site utilise des cookies – de petits fichiers texte qui sont
+                placés sur votre machine pour aider le site à fournir une
+                meilleure expérience utilisateur. Les cookies sont utilisés pour
+                conserver les préférences de l’utilisateur et fournir des données
+                de suivi anonymisées à des applications tierces comme Google
+                Analytics. En poursuivant votre navigation sur ce site, vous
+                acceptez donc l’utilisation de cookies.
+              </p>
+            </div>
+
+            <div>
+              <h3>Informations recueillies</h3>
+              <p>
+                Le site internet : Feeling Good Bakery ne demande pas
+                d’enregistrement nominatif à ses visiteurs et ne procède à aucun
+                enregistrement nominatif pour la simple consultation de ses pages.
+                Cependant, dans certains cas comme le formulaire de contact ou une
+                demande d’estimation en ligne, vous pouvez être invité à laisser
+                des données personnelles. Le caractère obligatoire ou facultatif
+                des données vous est signalé lors de la collecte par un
+                astérisque. Nous ne collectons aucune donnée sensible, à savoir
+                aucune donnée relative à vos origines raciales ou ethniques, à vos
+                opinions politiques, philosophiques ou religieuses ou votre
+                appartenance syndicale, ou qui sont relatives à votre santé ou
+                votre vie sexuelle.
+              </p>
+              <p>
+                Les informations recueillies sur le formulaire de contact de ce
+                site internet sont utilisées pour la gestion des demandes de devis
+                ou de demandes diverses, conservées sur le territoire européen et
+                sont en aucun cas revendues à des tiers. Elles sont conservées
+                pendant 10 ans et sont destinées à un usage interne uniquement.
+              </p>
+              <p>
+                Nous vous informons également de l’existence de la liste
+                d’opposition au démarchage téléphonique « Bloctel », sur laquelle
+                vous pouvez vous inscrire ici : https://conso.bloctel.fr/
+              </p>
+            </div>
+          </div>
+        </div>
+      </template>
     </footer>
     <script type="module" src="./src/js/main.js"></script>
     <script type="application/ld+json">
