@@ -1,6 +1,7 @@
 import "../scss/style.scss";
 import AOS from "aos";
-import "aos/dist/aos.css";
+// Trimmed copy of aos.css: only the animations used on this page.
+import "../vendor/aos.css";
 
 import "./consent";
 import "./header";
