@@ -2,14 +2,12 @@ import "../scss/style.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { injectSvgs } from "./functions";
 import "./header";
 import "./recipes";
 
 import "./components/modal";
 
 document.addEventListener("DOMContentLoaded", () => {
-  injectSvgs();
   AOS.init({
     duration: 600,
   });
