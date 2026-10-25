@@ -18,6 +18,7 @@
 @import "sections/informations";
 
 @import "footer";
+@import "print";
 
 html {
   overflow-x: hidden;
@@ -135,6 +136,12 @@ body {
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+// The width/height attributes only serve as aspect ratio (no layout shift
+// before the image loads); the rendered size stays driven by CSS.
+img {
+  height: auto;
 }
 
 h2 {

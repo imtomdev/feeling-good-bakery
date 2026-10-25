@@ -1,0 +1,16 @@
+// Minimal print stylesheet: hide what makes no sense on paper.
+@media print {
+  .loader,
+  section.bg,
+  video,
+  .burger-menu,
+  ul.navigation,
+  .swiper-navigation,
+  .modal {
+    display: none !important;
+  }
+
+  body {
+    overflow: visible;
+  }
+}
