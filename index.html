@@ -13,33 +13,6 @@
       name="description"
       content="✌🏽 No worries, just cookies ! 🍪 Cookies chauds et fondants à toute heure"
     />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-MC0HGGF759"
-    ></script>
-
-    <script>
-      setTimeout(() => {
-        document.body.classList.remove("--loading");
-      }, 5000);
-
-      void 0 === window._axcb && (window._axcb = []);
-      window._axcb.push(function (axeptio) {
-        axeptio.on("cookies:complete", function (choices) {
-          if (choices.google_analytics) {
-            window.dataLayer = window.dataLayer || [];
-
-            gtag("js", new Date());
-            gtag("config", "G-MC0HGGF759");
-          }
-        });
-      });
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-    </script>
   </head>
   <body class="--loading">
     <section class="loader">
@@ -122,10 +95,13 @@
     <section id="notre-histoire" class="introduction">
       <video
         src="./assets/videos/gif.mp4"
-        autoplay
+        preload="none"
+        data-lazy
         muted
         loop
         playsinline
+        width="560"
+        height="884"
       ></video>
       <div class="right">
         <div class="content">
@@ -144,10 +120,13 @@
         <video
           class="gif mobile"
           src="./assets/videos/gif.mp4"
-          autoplay
+          preload="none"
+          data-lazy
           muted
           loop
           playsinline
+          width="560"
+          height="884"
         ></video>
         <img
           class="team"
@@ -183,10 +162,13 @@
         />
         <video
           src="./assets/videos/video-centrale.mp4"
-          autoplay
+          preload="none"
+          data-lazy
           muted
           loop
           playsinline
+          width="1280"
+          height="720"
         ></video>
       </div>
     </section>
@@ -963,20 +945,6 @@
           "https://www.instagram.com/feelingoodbakery/"
         ]
       }
-    </script>
-    <script>
-      window.axeptioSettings = {
-        clientId: "60a53c9b6cd349769a41d8cb",
-        cookiesVersion: "ga_only",
-      };
-
-      (function (d, s) {
-        var t = d.getElementsByTagName(s)[0],
-          e = d.createElement(s);
-        e.async = true;
-        e.src = "//static.axept.io/sdk.js";
-        t.parentNode.insertBefore(e, t);
-      })(document, "script");
     </script>
   </body>
 </html>

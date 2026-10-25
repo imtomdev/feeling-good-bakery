@@ -72,6 +72,8 @@ section.introduction {
 
     > video.gif.mobile {
       display: none;
+      // Keep the aspect ratio from the width/height attributes (no fixed height).
+      height: auto;
       margin-top: 4rem;
 
       @media screen and (max-width: $break-medium) {
