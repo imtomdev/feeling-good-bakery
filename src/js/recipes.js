@@ -24,6 +24,23 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  // Slide images are lazy-loaded; make sure the two slides on each side of the
+  // active one are always loaded so a quick succession of clicks never shows
+  // an empty slide (native lazy-loading alone is not early enough in Firefox).
+  const preloadNeighbours = () => {
+    const count = swiper.slides.length;
+
+    for (let offset = -2; offset <= 2; offset++) {
+      const slide = swiper.slides[(swiper.activeIndex + offset + count) % count];
+      const img = slide && slide.querySelector("img");
+
+      if (img && img.loading === "lazy") img.loading = "eager";
+    }
+  };
+
+  preloadNeighbours();
+  swiper.on("slideChange", preloadNeighbours);
+
   swiper.on("slideChangeTransitionEnd", function () {
     const slide = swiper.slides[swiper.activeIndex];
 
