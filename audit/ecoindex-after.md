@@ -16,6 +16,8 @@
 
 Incertitude : ± 1 point sur le scénario central ; le seul risque de sortir de la cible est le traitement des vidéos par ecoindex.fr (§ 3.3), qui ferait tomber le score à 68 (C) dans le pire cas.
 
+**Mesure de vérité du 26/10/2026 (§ 9) : 218 / 38 / 2 341,5 Ko → 72 B**, identique au scénario central.
+
 ## 2. Mesure locale brute (ecoindex-cli)
 
 Même outil, même version, mêmes paramètres qu'à l'étape 1 : ecoindex-cli 2.32.0 (lib ecoindex 5.10.0, scraper 3.18.0, Camoufox 0.5.8), fenêtre 1920×1080, 3 s avant et après scroll. Site servi par `npm run build && npm run serve` (`vite preview`, port 4173) au commit `17a3597`.
@@ -156,3 +158,24 @@ Tout cumulé : ≈ 77–78, toujours B. Le A demanderait en plus de renoncer aux
 ## 8. Badge EcoIndex (étape 6)
 
 Le badge officiel (`https://bff.ecoindex.fr/badge/?theme=light&url=https://feelinggoodbakery.fr`) est ajouté dans le footer, thème `light` (fond blanc du footer). Il affiche la **dernière analyse connue** d'ecoindex.fr pour l'URL : aujourd'hui la note D du 25/10/2026 ; il ne montrera le nouveau score qu'après déploiement et nouvelle analyse de la prod sur ecoindex.fr (§ 7). Impact mesuré en local avec ecoindex-cli (run du 25/10 13:52, build avec badge) : 218 nœuds (+3 : `li`, `a`, `img`), 38 requêtes (+1, `bff.ecoindex.fr`, SVG de 694 o transférés, brotli, `cache-control: public, max-age=604800`), 6 635,1 Ko (+0,9), score brut 67,62 (−0,31 point), arrondi inchangé à 68. Dans le scénario central ecoindex.fr : 218 / 38 / 2 341 Ko → 71,6 → **72 B** (inclus dans le § 1). Accessibilité : `alt` explicite, lien avec `title`, anneau de focus visible (`:focus-visible`, contour marron 2 px), contraste du badge officiel inchangé.
+
+## 9. Mesure de vérité (26/10/2026)
+
+Déploiement manuel de `master` (`5a27479`) sur la prod le 26/10/2026 (rsync identique à `ci/deploy-production` ; Travis ne recevait plus les pushes), puis analyse lancée depuis le formulaire d'ecoindex.fr (le redirect `bff.ecoindex.fr/redirect/` renvoie le résultat en cache du 25/10). Résultat confirmé par l'API (`https://api.ecoindex.fr/v1/ecoindexes/e2883aa8-7b25-4859-ab4c-85c49312d89f`, `url` = `https://feelinggoodbakery.fr/`, moteur 5.10.0, 1920×1080).
+
+URL du résultat : <https://www.ecoindex.fr/resultat/?id=e2883aa8-7b25-4859-ab4c-85c49312d89f> (calculé le lundi 26 octobre 2026 à 14:31:11).
+
+| Métrique | Avant (25/10) | Estimé (§ 1) | **Mesuré (26/10)** | Écart estimé → mesuré |
+|---|---|---|---|---|
+| DOM (éléments) | 321 | 218 | **218** | 0 |
+| Requêtes HTTP | 79 | 38 | **38** | 0 |
+| Poids transféré (Ko) | 7 205 | ≈ 2 340 | **2 341,5** | +1,5 |
+| Score | 54 | 71,6 → 72 | **72,0** | 0 |
+| Note | D | B | **B** | — |
+| GES (gCO2e / vue) | 1,92 | ≈ 1,57 | **1,56** | −0,01 |
+| Eau (cl / vue) | 2,88 | ≈ 2,35 | **2,34** | −0,01 |
+| Classement | 289 676 / 642 729 | | **140 423 / 643 003** | |
+
+Lecture : le scénario central du § 3 était le bon, les deux MP4 lazy (`intro`, `video-centrale`) ne sont pas téléchargés par le navigateur d'ecoindex.fr, comme à l'étape 1. Cible du plan (B, 72 ± 3) atteinte au point près. Les leviers restants sont inchangés (§ 6.1 : compression côté serveur ≈ +0,4, vidéos plus compressées, etc.).
+
+Badge : à 14:35 le badge `bff.ecoindex.fr/badge/` renvoie encore « D » ; il est servi avec `cache-control: max-age=604800` (7 jours), il basculera sur « B » au plus tard à l'expiration de ce cache.
