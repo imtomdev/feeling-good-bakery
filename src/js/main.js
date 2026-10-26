@@ -1,15 +1,19 @@
 import "../scss/style.scss";
 import AOS from "aos";
-import "aos/dist/aos.css";
+// Trimmed copy of aos.css: only the animations used on this page.
+import "../vendor/aos.css";
 
-import { injectSvgs } from "./functions";
+import "./consent";
 import "./header";
+import "./videos";
 import "./recipes";
 
 import "./components/modal";
 
+// Safety net: never keep the loader on screen for more than 5 s.
+setTimeout(() => document.body.classList.remove("--loading"), 5000);
+
 document.addEventListener("DOMContentLoaded", () => {
-  injectSvgs();
   AOS.init({
     duration: 600,
   });
