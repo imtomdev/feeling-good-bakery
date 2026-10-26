@@ -6,10 +6,8 @@ section.mosaic {
   align-items: center;
   margin-top: 5rem;
 
-  img {
-    width: auto;
-    height: auto;
-  }
+  // No explicit width/height: auto, so the width/height attributes of the
+  // images give their size (and aspect ratio) before they are lazy-loaded.
 
   > div {
 	  --width: calc(100% / 3)
